@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap Sample 2 - Pokemon Movie(Card)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand text-primary">Pokemon world</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pokemon-Movie.html">Movie</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Pokemon List
+                                                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Pokemon-pokedex.html">All Pokemon</a>
+                            <a class="dropdown-item" href="#">Water</a>
+                            <a class="dropdown-item" href="#">Fire</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Grass</a>
+                            <a class="dropdown-item" href="#">Normal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Game(Disable)</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Q and A(Disable)</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <img src="img/pokmeon_banner_1.jpg" alt="Page Banner" class="img-fluid"></img>
+    </header>
+
+
+    <article class="container card-group ">
+        <section class="card md-3 mt-2 p-3 ">
+            <div class="card-header">
+                <h3 class=" card-title text-white  bg-primary text-center pt-2 pb-2"><strong>名偵探皮卡丘</strong></h3>
+                <p class="card-subtitle text-info mt-2"><strong>Pokémon Detective Pikachu</strong>
+            </div>
+
+            <div class="card-body">
+                <div class="movie-inform">
+                    <strong>
+                         <ul class="list-group list-group-flush">
+                            <li class="list-group-item">片長：104分</li>
+                            <li class="list-group-item">導演/編劇： 羅勃賴特曼</li>
+                            <li class="list-group-item">演員： 萊恩雷諾斯
+                                    賈斯提斯史密斯
+                                    凱瑟琳紐頓
+                                    渡邊謙</li>
+                        </ul>
+                    </strong>
+                </div>
+
+                <div class="movie-detail text-muted">
+                    <p>
+                        《精靈寶可夢》劇場版推出第21部電影！人與寶可夢，彼此的羈絆將引發奇蹟———！在人與風共同生活的都市．風來城，正在舉辦一年一度的風節。參與此盛會的小智和皮卡丘遇上5名新夥伴，將發現幻之寶可夢的面目。
+                    </p>
+                </div>
+
+                <div class="box-video embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eydcz13gXvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card-footer bg-success text-white text-center pb-0">
+                <p>上映日期：2019/05/09</p>
+            </div>
+        </section>
+
+        <section class="card md-3 mt-2 p-3">
+            <div class="card-header">
+                <h3 class=" card-title text-white  bg-primary text-center pt-2 pb-2"><strong>精靈寶可夢劇場版：我們的故事</strong></h3>
+                <p class="card-subtitle text-info mt-2"><strong>Pokemon the Movie: The Power Of Us</strong></p>
+            </div>
+            <div class="card-body">
+                <div class="movie-inform">
+                    <strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">片長：98分</li>
+                                <li class="list-group-item">導演： 矢島哲生</li>
+                                <li class="list-group-item">演員： 松本梨香 大谷育江 林原惠</li>
+                            </ul>
+                    </strong>
+                </div>
+
+                <div class="movie-detail text-muted">
+                    <p>
+                        《精靈寶可夢》劇場版推出第21部電影！人與寶可夢，彼此的羈絆將引發奇蹟———！在人與風共同生活的都市．風來城，正在舉辦一年一度的風節。參與此盛會的小智和皮卡丘遇上5名新夥伴，將發現幻之寶可夢的面目。
+                    </p>
+                </div>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fDEG0eUnfQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="card-footer bg-success text-white text-center pb-0">
+                <p>上映日期：2018/12/07</p>
+            </div>
+        </section>
+
+
+
+        <section class="card md-3 mt-2 p-3">
+            <div class="card-header">
+                <h3 class=" card-title text-white  bg-primary text-center pt-2 pb-2"><strong>劇場版精靈寶可夢：就決定是你了！</strong></h3>
+                <p class="card-subtitle text-info mt-2"><strong>Pokemon the Movie: I Choose You!</strong>
+            </div>
+            <div class="card-body">
+                <div class="movie-inform">
+                    <strong>
+                        <ul class="list-group list-group-flush">
+                                <li class="list-group-item">片長：98分</li>
+                                <li class="list-group-item">導演： 湯山邦彥</li>
+                                <li class="list-group-item">演員： 松本梨香
+                                        大谷育江
+                                        林原惠</li>
+                        </ul>
+                    </strong>
+                </div>
+
+                <div class="movie-detail text-muted">
+                    <p>
+                        《精靈寶可夢》劇場版推出第21部電影！人與寶可夢，彼此的羈絆將引發奇蹟———！在人與風共同生活的都市．風來城，正在舉辦一年一度的風節。參與此盛會的小智和皮卡丘遇上5名新夥伴，將發現幻之寶可夢的面目。
+                    </p>
+                </div>
+
+                <div class="box-video embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/EP9YpeX3MnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card-footer bg-success text-white text-center pb-0">
+                <p>上映日期：2017/11/07</p>
+            </div>
+        </section>
+
+    </article>
+
+
+    <footer class="contain-fluid mt-5 bg-dark footer-content">
+        <p class="text-center text-white mb-0">(c) 2019 Bootstrap pratice sample</p>
+    </footer>
+</body>
+
+</html>

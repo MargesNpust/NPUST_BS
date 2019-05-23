@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap Sample - Pokedex (Pagination)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand text-primary">Pokemon world</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pokemon-Movie.html">Movie</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Pokemon List
+                                                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Pokemon-pokedex.html">All Pokemon</a>
+                            <a class="dropdown-item" href="#">Water</a>
+                            <a class="dropdown-item" href="#">Fire</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Grass</a>
+                            <a class="dropdown-item" href="#">Normal</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Game(Disable)</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Q and A(Disable)</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="card bg-dark text-white ">
+            <img src="img/Grass type/banner-grass.png" class="card-img" alt="page caption image" class="page-cap-img card-img-top d-block m-auto w-60">
+            <div class="card-img-overlay text-dark  d-flex justify-content-center align-items-center w-100">
+                <h1 class="card-title text-center ">Pokedex-Grass</h1>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <h3 class="col-12 text-center p-2 bg-success text-white">草屬性的 Pokemon</h3>
+            <div class="card-group col-12">
+                <div class="card  p-1 mr-2 border border-danger card-active">
+                    <div class="active card-header bg-light text-center">
+                        <h3 class="card-title ">月桂葉</h3>
+                        <p class="card-subtitle ">日文︰ベイリーフ</p>
+                        <p ">英文︰Bayleaf</p>
+                    </div>
+                    <div class="card-body ">
+                        <div class="pthumbnail ">
+                            <a href="pokedex-bayleef.html "><img src="img/Grass type/0_Bayleef.png " alt=" " class="img-thumbnail d-block m-auto border-0 "></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mr-2 border ">
+                    <div class="card-header bg-light text-center ">
+                        <h3 class="card-title ">蔓藤怪</h3>
+                        <p class="card-subtitle ">日文︰モンジャラ</p>
+                        <p>英文︰Tangela</p>
+                    </div>
+                    <div class="card-body ">
+                        <a href="pokedex-Tangela.html "><img src="img/Grass type/1_Tangela.png " alt=" " class="img-thumbnail d-block m-auto border-0 "></a>
+                    </div>
+
+                </div>
+                <div class="card p-1 mr-2 border ">
+                    <div class="card-header bg-light text-center ">
+                        <h3 class="card-title ">菊草叶</h3>
+                        <p class="card-subtitle ">日文︰チコリータ</p>
+                        <p>英文︰Chikorita</p>
+                    </div>
+                    <div class="card-body ">
+                        <a href="pokedex-Chikorita.html "><img src="img/Grass type/2_Chikorita.png " alt=" " class="img-thumbnail d-block m-auto border-0 "></a>
+                    </div>
+
+                </div>
+
+                <div class="card p-1 mr-2 border ">
+                    <div class="card-header bg-light text-center ">
+                        <h3 class="card-title ">大竺葵</h3>
+                        <p class="card-subtitle ">日文︰メガニウム</p>
+                        <p>英文︰Meganium</p>
+                    </div>
+                    <div class="card-body ">
+                        <a href="pokedex-Meganium.html "><img src="img/Grass type/3_Meganium.png " alt=" " class="img-thumbnail d-block m-auto border-0 "></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 導覽列 -->
+            <div class="row mt-3 ">
+                <div class="col-12 ">
+                    <nav aria-label="Pokedex navigation ">
+                        <ul class="pagination justify-content-center ">
+                            <li class="page-item "><a class="page-link " href="# " aria-label="previous ">Previous</a></li>
+                            <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                            <li class="page-item "><a class="page-link " href="# ">2</a></li>
+                            <li class="page-item "><a class="page-link " href="# ">3</a></li>
+                            <li class="page-item "><a class="page-link " href="# ">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+    </section>
+
+    <section class="container ">
+
+        <div class="card m-5 ">
+            <div class="card-header bg-light text-center ">
+                <h3 class="card-title ">月桂葉</h3>
+                <p class="card-subtitle ">日文︰ベイリーフ</p>
+                <p>英文︰Bayleaf</p>
+            </div>
+            <div class="card-body ">
+                <div class="pthumbnail ">
+                    <img src="img/Grass type/0_Bayleef.png " alt=" " class="card-img-top d-block m-auto w-50 ">
+                </div>
+            </div>
+            <div class="movie-inform ">
+                <strong>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item ">編號：#153</li>
+                                <li class="list-group-item ">分類：葉子寶可夢</li>
+                                <li class="list-group-item ">特性：茂盛</li>
+                                <li class="list-group-item ">隱藏特性：葉子防守</li>
+                            </ul>
+                    </strong>
+            </div>
+
+            <div class="movie-detail text-muted ">
+                <h3 class="text-center bg-success text-white "><strong>基本介紹</strond></h3>
+                <h4 class="attr-Cap ">外貌</h4>
+                <p class="attr-descrip ">月桂葉長得像是淡黃色的蜥腳下目恐龍或是蜥蜴。脖子上長著一圈像捲起來的葉子一樣的植物，據稱這些蕾的裡面是小樹的芽。一片鐮刀形狀的大葉子從月桂葉頭上突出來。月桂葉有著紅色的眼睛，分別有一個大腳指甲的四隻腳，和一條小小的尾巴。月桂葉比牠進化前的形態，月桂葉皮膚的顏色由綠色變成黃色。</p>
+
+                <h4 class="attr-Cap ">特殊能力</h4>
+                <p class="attr-descrip ">從脖子上的葉子狀植物飄散出來的香氣味道非常濃烈、特殊、像香料一般，聞到的寶可夢都會變得非常興奮並渴求戰鬥。這個味道替聞到的寶可夢帶來了力量，以至於牠們甚至可能變得具有攻擊性。</p>
+
+                <h4 class="attr-Cap ">性情</h4>
+                <p class="attr-descrip ">月桂葉比牠進化前的形態，也就是菊草葉來的沉著。不過牠們葉子所散發出的香氣會令人變得興奮跟渴望戰鬥。 栖息地 月桂葉是非常稀有的寶可夢，最常在寬廣的平原或小型的森林裡被發現跟其他菊草葉、月桂葉和大竺葵在一起。
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="contain-fluid mt-5 bg-dark footer-content ">
+        <p class="text-center text-white mb-0 ">(c) 2019 Bootstrap pratice sample</p>
+    </footer>
+</body>
+
+</html
