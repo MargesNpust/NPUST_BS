@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap - Nav Tab Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <!--   Nav-tab-->
+
+    <section class="container  demo-collapse">
+        <h3 class="text-warning bg-info text-center p-2">Nav - Tabs (With Fade)</h3>
+        <div class="row">
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a href="#panel1" id="tab-pg1" class="nav-link active" data-toggle="tab" role="tab" aria-controls="panel1" aria-selected="true">Content-1</a></li>
+                    <li class="nav-item"><a href="#panel2" id="tab-pg2" class="nav-link" data-toggle="tab" role="tab" aria-controls="panel2" aria-selected="false">Content-2</a></li>
+                    <li class="nav-item"><a href="#panel3" id="tab-pg3" class="nav-link" data-toggle="tab" role="tab" aria-controls="panel3" aria-selected="false">Content-3</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="tab-content" id="tabcontent">
+            <div class="tab-pane fade show active" id="panel1" role="tabpanel" aria-labelledby="tab-pg1">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-danger">Caption-1</h3>
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="panel2" role="tabpanel" aria-labelledby="tab-pg2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-primary">Caption-2</h3>
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="panel3" role="tabpanel" aria-labelledby="tab-pg3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-success">Caption-3</h3>
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container  demo-collapse mt-3">
+        <h3 class="text-warning bg-info text-center p-2">Nav - Tabs (Np Fade)</h3>
+        <div class="row">
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a href="#panel4" id="tab-pg1" class="nav-link active" data-toggle="tab" role="tab" aria-controls="panel1" aria-selected="true">Content-4</a></li>
+                    <li class="nav-item"><a href="#panel5" id="tab-pg2" class="nav-link" data-toggle="tab" role="tab" aria-controls="panel2" aria-selected="false">Content-5</a></li>
+                    <li class="nav-item"><a href="#panel6" id="tab-pg3" class="nav-link" data-toggle="tab" role="tab" aria-controls="panel3" aria-selected="false">Content-6</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="tab-content" id="tabcontent">
+            <div class="tab-pane  show active" id="panel4" role="tabpanel" aria-labelledby="tab-pg1">
+                <div class="card">
+                    <div class="card-header bg-dark text-light">
+                        <h3>Caption-4</h3>
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="panel5" role="tabpanel" aria-labelledby="tab-pg2">
+                <div class="card">
+                    <div class="card-header  bg-dark text-black-50">
+                        <h3 class=" text-primary ">Caption-5</h3>
+                    </div>
+                    <div class="card-body ">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane " id="panel6" role="tabpanel " aria-labelledby="tab-pg3 ">
+                <div class="card ">
+                    <div class="card-header bg-dark text-warning">
+                        <h3 class="text-success ">Caption-6</h3>
+                    </div>
+                    <div class="card-body ">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorem voluptate voluptates nisi, debitis perspiciatis vitae ab consequatur neque, aut aperiam repellendus natus saepe illum expedita inventore vel quidem veniam.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>

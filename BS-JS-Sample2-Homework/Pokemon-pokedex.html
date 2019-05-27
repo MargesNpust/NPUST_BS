@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap Sample - Pokedex (Pagination)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand text-primary">Pokemon world</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pokemon-Movie.html">Movie</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Pokemon List
+                                                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Pokemon-pokedex.html">All Pokemon</a>
+                            <a class="dropdown-item" href="#">Water</a>
+                            <a class="dropdown-item" href="#">Fire</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Grass</a>
+                            <a class="dropdown-item" href="#">Normal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Game(Disable)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Q and A(Disable)</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="banner card bg-dark text-white ">
+            <img src="img/banner.png" class="card-img" alt="page caption image" class="page-cap-img card-img-top d-block m-auto w-60">
+            <div class="card-img-overlay text-dark  d-flex justify-content-center align-items-center w-100">
+                <h1 class="card-title text-center">Pokedex</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item active"> <a id="pdex-1" href="#pdex-grass" class="nav-link active" data-toggle="tab" role="tab" aria-controls="tab-grass" aria-selected="true">Grass</a></li>
+                <li class="nav-item"><a id="pdex-2" href="#pdex-fire" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-fire" aria-selected="false">Fire</a></li>
+                <li class="nav-item"><a id="pdex-3" href="#pdex-water" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-water" aria-selected="false">Water</a></li>
+                <li class="nav-item"><a id="pdex-4" href="#pdex-bugs" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-bugs" aria-selected="false">Bugs</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="tab-content" id="tabcontent">
+
+        <section class="pdex-grass container mt-2 tab-pane fad show active" id="pdex-grass" role="tabpanel" aria-labelledby="tab-grass">
+            <div class="row justify-content-around">
+                <h3 class="col-12 text-center bg-success text-white p-2 mb-2 mt-1 ">Pokemon-Grass</h3>
+                <div class="card-group col-12">
+                    <div class="card  p-1 mr-2 ">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">月桂葉</h3>
+                            <p class="card-subtitle">日文︰ベイリーフ</p>
+                            <p>英文︰Bayleaf</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Grass" data-content="月桂葉" data-placement="top">
+                                <a href="pokedex-bayleef.html"><img src="img/Grass type/0_Bayleef.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card  mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">蔓藤怪</h3>
+                            <p class="card-subtitle">日文︰モンジャラ</p>
+                            <p>英文︰Tangela</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Grass" data-content="蔓藤怪" data-placement="top">
+                                <a href="pokedex-Tangela.html"><img src="img/Grass type/1_Tangela.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">菊草葉</h3>
+                            <p class="card-subtitle">日文︰チコリータ</p>
+                            <p>英文︰Chikorita</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Grass" data-content="菊草葉" data-placement="top">
+                                <a href="pokedex-Chikorita.html"><img src="img/Grass type/2_Chikorita.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">大竺葵</h3>
+                            <p class="card-subtitle">日文︰メガニウム</p>
+                            <p>英文︰Meganium</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Grass" data-content="大竺葵" data-placement="top">
+                                <a href="pokedex-meganium.html"><img src="img/Grass type/3_Meganium.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="pdex-fire container mt-2 tab-pane fad" id="pdex-fire" role="tabpanel" aria-labelledby="tab-fire">
+
+            <!-- <section class="pdex-Fire container"> -->
+            <div class="row justify-content-center">
+                <h3 class="col-12 text-center p-2 bg-warning text-white">Pokemon-Fire</h3>
+                <div class="card-group col-12">
+                    <div class="card  p-1 mr-2 ">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">小火龍</h3>
+                            <p class="card-subtitle">日文︰ヒトカゲ</p>
+                            <p>英文︰Charmander</p>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Fire" data-content="小火龍" data-placement="top">
+                                <a href="pokedex-bayleef.html"><img src="img/Fire/Charmander.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card  mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">六尾</h3>
+                            <p class="card-subtitle">日文︰ロコン</p>
+                            <p>英文︰Vulpix</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Fire" data-content="六尾" data-placement="top">
+                                <a href="pokedex-Tangela.html"><img src="img/Fire/Vulpix.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">卡蒂狗</h3>
+                            <p class="card-subtitle">日文︰ガーディ</p>
+                            <p>英文︰Growlithe</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Fire" data-content="卡蒂狗" data-placement="top">
+                                <a href="pokedex-Chikorita.html"><img src="img/Fire/Growlithe.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">小火馬</h3>
+                            <p class="card-subtitle">日文︰ポニータ</p>
+                            <p>英文︰Ponyta</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Fire" data-content="小火馬" data-placement="top">
+                                <a href="pokedex-Meganium.html"><img src="img/Fire/Ponyta.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="pdex-grass container mt-2 tab-pane fad" id="pdex-water" role="tabpanel" aria-labelledby="tab-water">
+
+            <div class="row justify-content-around">
+                <h3 class="col-12 text-center bg-primary text-white p-2 mb-2 mt-1">Pokemon-Water</h3>
+                <div class="card-group col-12">
+                    <div class="card  p-1 mr-2 ">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">傑尼龜</h3>
+                            <p class="card-subtitle">日文︰ゼニガメ</p>
+                            <p>英文︰Squirtle</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Water" data-content="傑尼龜" data-placement="top">
+                                <a href="#"><img src="img/Water/Squirtle.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card  mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">可達鴨</h3>
+                            <p class="card-subtitle">日文︰コダック</p>
+                            <p>英文︰Psyduck</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Water" data-content="可達鴨" data-placement="top">
+                                <a href="#"><img src="img/water/Psyduck.png" alt="Psyduck" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">小海獅</h3>
+                            <p class="card-subtitle">日文︰パウワウ</p>
+                            <p>英文︰Seel</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Water" data-content="小海獅" data-placement="top">
+                                <a href="#"><img src="img/water/Seel.png" alt="Seel" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">墨海馬</h3>
+                            <p class="card-subtitle">日文︰タッツー</p>
+                            <p>英文︰Horsea</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Water" data-content="墨海馬" data-placement="top">
+                                <a href="#"><img src="img/Water/Horsea.png" alt="Horsea" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </section>
+
+
+        <section class="pdex-bugs container mt-2 tab-pane fad" id="pdex-bugs" role="tabpanel" aria-labelledby="tab-bugs">
+
+            <div class="row justify-content-around">
+                <h3 class="col-12 text-center bg-danger text-white p-2 mb-2 mt-1">Pokemon-Bugs</h3>
+                <div class="card-group col-12">
+                    <div class="card  p-1 mr-2 ">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">綠毛蟲</h3>
+                            <p class="card-subtitle">日文︰キャタピー</p>
+                            <p>英文︰Caterpie</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Bugs" data-content="綠毛蟲" data-placement="top">
+                                <a href="#"><img src="img/bugs/Caterpie.png" alt="Caterpie" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card  mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">刺尾蟲</h3>
+                            <p class="card-subtitle">日文︰ケムッソ</p>
+                            <p>英文︰</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Bugs" data-content="刺尾蟲" data-placement="top">
+                                <a href="#"><img src="img/bugs/Wurmple.png" alt="Wurmple" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">結草兒</h3>
+                            <p class="card-subtitle">日文︰ミノムッチ</p>
+                            <p>英文︰Burmy</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Bugs" data-content="結草兒" data-placement="top">
+                                <a href="#"><img src="img/bugs/Burmy.png" alt="Burmy" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card  p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">甜甜瑩</h3>
+                            <p class="card-subtitle">日文︰イルミーゼ</p>
+                            <p>英文︰Illumise</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail" data-toggle="popover" data-trigger="hover" title="Pokemon-Bugs" data-content="甜甜瑩" data-placement="top">
+                                <a href="#"><img src="img/bugs/Illumise.png" alt="Illumise" class="img-thumbnail d-block m-auto border-0"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </section>
+
+        </div>
+
+        <footer class="contain-fluid mt-5 bg-dark footer-content ">
+            <p class="text-center text-white mb-0 ">(c) 2019 Bootstrap pratice sample</p>
+        </footer>
+
+
+        <script>
+            $(document).ready(
+                function() {
+                    $('[data-toggle="popover"]').popover();
+                }
+            );
+        </script>
+
+</body>
+
+</html>
