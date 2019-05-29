@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap - Popovers Demo</title>
+    <title>Bootstrap -JS component</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -136,53 +136,131 @@
 
     </section>
 
-    <!-- <section>
-        <button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Test</button>
-
-        <div class="modal fade" id="myModal" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Please give more Information</h4>
-                        <button type="button" class="clase" data-dismiss="modal aria-label=" Close ">
-                         <span aria-hidden="true ">&times;`</span>
-                        </button>
+    <!-- 摺疊元件(Collapse)-摺疊內容-->
+    <section class="container col-12 demo-Collapse mt-3">
+        <h3 class="text-warning bg-info text-center p-2">Collapse information- single item</h3>
+        <div class="justify-content-center">
+            <div id="section-btn" class="text-center">
+                <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#desc-card01">Show Card - 1</button>
+                <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#desc-card02">Show Card - 2</button>
+                <a class="btn btn-lg btn-primary" data-toggle="collapse" href="#desc-card02" role="button" aria-expanded="false">Show Card - 2(a link)</a>
+            </div>
+            <div class="card-group w-75 m-auto">
+                <!-- <div class="row justify-content-center mt-2"> -->
+                <div class="card collapse block-card mr-2 p-2 border " id="desc-card01">
+                    <div class="card-header bg-warning">
+                        <h3 class="card-title">Section-1</h3>
+                        <p class="card-subtitle">Sub title items...</p>
                     </div>
-                    <div class="modal-body ">
-                        <p>thanks for your help!</p>
-                    </div>
-                    <div class="modal-footer ">
-                        <button type="button " class="btn btn-success " data-dismiss="modal ">Closed</button>
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere quae itaque ad quos, beatae magnam nisi porro culpa enim odit. Nisi sint quisquam maxime eligendi. Omnis optio aliquid inventore.
                     </div>
                 </div>
 
+                <div class="card collapse block-card mr-2 p-2 border show" id="desc-card02" aria-expanded="true">
+                    <div class="card-header bg-info">
+                        <h3 class="card-title">Section-1</h3>
+                        <p class="card-subtitle">Sub title items...</p>
+                    </div>
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere quae itaque ad quos, beatae magnam nisi porro culpa enim odit. Nisi sint quisquam maxime eligendi. Omnis optio aliquid inventore.
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
 
-        </div> -->
 
-    <!-- <button type="button " class="btn btn-primary btn-block mt-3 " data-toggle="modal " data-target="#myModal ">Submit</button> -->
-    <!-- <button class="btn btn-lg btn-primary " data-toggle="modal " data-target="myModal " tabindex="-1 "> Show Modal MSG</button>
+        </div>
 
-        <div class="modal fade " id="myModal ">
-            <div class="modal-dialog ">
-                <div class="modal-content ">
-                    <div class="modal-header ">
-                        <h3 class="modal-title ">
-                            Modal Message title</h3>
-                        </h3>
-                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
-                                    </button>
+    </section>
+
+    <!-- Collapse  - 控制多內容  -->
+    <section class="container col-12 demo-Collapse mt-3">
+        <h3 class="text-warning bg-info text-center p-2">Collapse information- Mutiple item</h3>
+        <div id="section-btn" class="text-center">
+            <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#desc-card1">Show Card - 1</button>
+            <button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#desc-card2">Show Card - 2</button>
+            <a class="btn btn-lg btn-danger text-white" data-toggle="collapse" data-target=".block-card-both" role="button" aria-expanded="false">Show Both</a>
+        </div>
+        <div id="row">
+            <div class="card-group" id="gp-card">
+                <div class="card collapse  block-card-both mr-2 p-2" id="desc-card1">
+                    <div class="card-header">
+                        <h3 class="card-title">Section-1</h3>
+                        <p class="card-subtitle">Sub title items...</p>
                     </div>
-                    <div class="modal-body ">
-                        <p> This is a smart cat !</p>
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere quae itaque ad quos, beatae magnam nisi porro culpa enim odit. Nisi sint quisquam maxime eligendi. Omnis optio aliquid inventore.
                     </div>
-                    <div class="modal-footer ">
-                        <button type="button " class="btn btn-denger " data-dismiss="modal ">Close</button>
+                </div>
+
+                <div class="card collapse block-card-both mr-2 p-2" id="desc-card2">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="card-title">Section-2</h3>
+                        <p class="card-subtitle">Sub title items...</p>
+                    </div>
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere quae itaque ad quos, beatae magnam nisi porro culpa enim odit. Nisi sint quisquam maxime eligendi. Omnis optio aliquid inventore.
+                    </div>
+                </div>
+
+                <div class="card collapse block-card-both mr-2 p-2" id="desc-card3">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="card-title">Section-3</h3>
+                        <p class="card-subtitle">Sub title items...</p>
+                    </div>
+                    <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere quae itaque ad quos, beatae magnam nisi porro culpa enim odit. Nisi sint quisquam maxime eligendi. Omnis optio aliquid inventore.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Collapse  - Card組件摺疊視窗  -->
+    <section class="container col-12 demo-Collapse mt-3">
+        <h3 class="text-warning bg-info text-center p-2">Collapse information- card collapse</h3>
+
+        <div id="accordion">
+            <div class="card mr-2 p-2 w-50 m-auto" id="collapse-card01">
+                <div class="card-header" id="cardhead01">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#cardbody01" aria-expanded="true"><strong>Section-01</strong></button>
+                    <p class="card-subtitle p-2">Sub title items...</p>
+                </div>
+                <div id="cardbody01" class="collapse show" data-parent="#accordion">
+                    <div class="card-body text-info"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, totam. Dolor vel minus at ea qui labore eaque placeat porro soluta dicta et exercitationem, saepe eum molestias beatae assumenda rem! Amet veniam, doloremque ullam
+                        mollitia quo fuga nostrum, quod ipsum consectetur rem nesciunt repellat placeat exercitationem similique.
+                    </div>
+                </div>
+            </div>
+            <div class="card mr-2 p-2 w-50 m-auto">
+                <div class="card-header" id="cardhead02">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#cardbody02" aria-expanded="false">
+                                <strong>Section-02</strong>
+                    </button>
+                    <p class="card-subtitle p-2">Sub title items...</p>
+                </div>
+                <div id="cardbody02" class="collapse" aria-labelledby="cardhead02" data-parent="#accordion">
+                    <div class="card-body text-danger">
+                        Vero totam, at necessitatibus cumque itaque optio velit maxime consequuntur voluptatum commodi? Aspernatur, perspiciatis nemo. Nam culpa eaque praesentium? Eius, unde! Temporibus, fugiat necessitatibus maxime sint, esse quam beatae voluptate optio nostrum
+                        doloremque tempora modi facilis.
                     </div>
                 </div>
             </div>
 
-        </div> -->
+            <div class="card mr-2 p-2 w-50 m-auto">
+                <div class="card-header" id="cardhead03">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#cardbody03" aria-expanded="false">
+                        <strong>Section-03</strong>
+                    </button>
+                    <p class="card-subtitle p-2">Sub title items...</p>
+                </div>
+                <div id="cardbody03" class="collapse" aria-labelledby="cardhead03" data-parent="#accordion">
+                    <div class="card-body text-primary">
+                        Cum nobis, consequuntur libero omnis molestias voluptates pariatur hic! Dolorum, dicta voluptate? Nulla voluptatum excepturi adipisci, possimus commodi doloribus aspernatur nisi aliquid non, ea mollitia. Obcaecati fugit enim cumque magni! Nemo magnam
+                        voluptatibus eum! Laudantium vel architecto nostrum eveniet molestiae! Sunt dicta soluta natus temporibus, exercitationem modi aspernatur magni, esse inventore quo ea maiores officiis debitis, nostrum libero fugit quos? Est perspiciatis
+                        pariatur iure ut minima nam?
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <script>
