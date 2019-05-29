@@ -55,9 +55,15 @@ header section {
         color: green;
         font-size: 1.5rem
     }
-    .banner .card-title {
-        font-size: 1.5em;
-        color: green
+    .movie-detail .attr-Cap {
+        color: darkgoldenrod;
+        font-size: 1rem;
+    }
+    .movie-detail .attr-descrip {
+        font-size: 0.8rem
+    }
+    .movie-detail .item-cap {
+        font-size: 1.3rem;
     }
 }
 

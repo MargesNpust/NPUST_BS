@@ -35,8 +35,8 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Pokemon List
-                                                  </a>
+                             Pokemon List
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="Pokemon-pokedex.html">All Pokemon</a>
                             <a class="dropdown-item" href="#">Water</a>
@@ -61,7 +61,14 @@
                 </form>
             </div>
         </nav>
-        <div class="card bg-dark text-white ">
+
+        <!-- <div class="banner card bg-dark text-white">
+            <img src="img/banner.png" class="card-img" alt="page caption image" class="page-cap-img card-img-top d-block m-auto w-60">
+            <div class="card-img-overlay text-dark  d-flex justify-content-center align-items-center w-100">
+                <h1 class="card-title text-center">Pokedex</h1>
+            </div>
+        </div> -->
+        <div class="banner card bg-dark text-white">
             <img src="img/Grass type/banner-grass.png" class="card-img" alt="page caption image" class="page-cap-img card-img-top d-block m-auto w-60">
             <div class="card-img-overlay text-dark d-flex justify-content-center align-items-center w-100">
                 <h1 class="card-title text-center">Pokedex-Grass</h1>
@@ -73,12 +80,79 @@
     <section class="container">
         <div class="row justify-content-center">
             <h3 class="col-12 text-center p-2 bg-success text-white">草屬性的 Pokemon</h3>
-            <div class="card-group col-12">
-                <div class="card  p-1 mr-2 border card-active">
+            <div id="phone-view" class="bg-light text-center d-md-none d-sm-block">
+                <a class="btn btn-outline-primary" data-toggle="collapse" data-target="#poke-Bayleaf" aria-expanded="false">月桂葉</a>
+                <a class="btn btn-outline-primary" data-toggle="collapse" data-target="#poke-Tangela" aria-expanded="false">蔓藤怪</a>
+                <a class="btn btn-outline-primary" data-toggle="collapse" data-target="#poke-Chikorita" aria-expanded="false">菊草葉</a>
+                <a class="btn btn-outline-primary" data-toggle="collapse" data-target="#poke-Meganium" aria-expanded="false">大竺葵</a>
+            </div>
+            <div id="desktop-view" class="d-none  d-md-block">
+                <div class="card-group col-12 ">
+                    <div class="card  p-1 mr-2 border">
+                        <div class="active card-header bg-light text-center">
+                            <h3 class="card-title">月桂葉</h3>
+                            <p class="card-subtitle">日文︰ベイリーフ</p>
+                            <p>英文︰Bayleaf</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="pthumbnail">
+                                <a data-toggle="collapse" data-target="#poke-Bayleaf" aria-expanded="true">
+                                    <img src="img/Grass type/0_Bayleef.png" alt=" " class="img-thumbnail d-block m-auto border-0">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">蔓藤怪</h3>
+                            <p class="card-subtitle">日文︰モンジャラ</p>
+                            <p>英文︰Tangela</p>
+                        </div>
+                        <div class="card-body">
+                            <a data-toggle="collapse" data-target="#poke-Tangela" aria-expanded="false">
+                                <img src="img/Grass type/1_Tangela.png" alt="" class="img-thumbnail d-block m-auto border-0"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="card p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">菊草叶</h3>
+                            <p class="card-subtitle">日文︰チコリータ</p>
+                            <p>英文︰Chikorita</p>
+                        </div>
+                        <div class="card-body">
+                            <a data-toggle="collapse" data-target="#poke-Chikorita" aria-expanded="false">
+                                <img src="img/Grass type/2_Chikorita.png" alt=" " class="img-thumbnail d-block m-auto border-0">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="card p-1 mr-2 border">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="card-title">大竺葵</h3>
+                            <p class="card-subtitle">日文︰メガニウム</p>
+                            <p>英文︰Meganium</p>
+                        </div>
+                        <div class="card-body ">
+                            <a data-toggle="collapse" data-target="#poke-Meganium" aria-expanded="false">
+                                <img src="img/Grass type/3_Meganium.png" alt=" " class="img-thumbnail d-block m-auto border-0">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="desktop-view"> -->
+            <!-- <div class="card-group col-12  d-md-none d-lg-none">
+                <div class="card p-1 mr-2">
                     <div class="active card-header bg-light text-center">
                         <h3 class="card-title">月桂葉</h3>
                         <p class="card-subtitle">日文︰ベイリーフ</p>
-                        <p>英文︰Bayleaf</p>
+                        <p class="">英文︰Bayleaf</p>
                     </div>
                     <div class="card-body">
                         <div class="pthumbnail">
@@ -104,11 +178,11 @@
 
                 <div class="card p-1 mr-2 border">
                     <div class="card-header bg-light text-center">
-                        <h3 class="card-title">菊草叶</h3>
+                        <h3 class="card-title ">菊草葉</h3>
                         <p class="card-subtitle">日文︰チコリータ</p>
                         <p>英文︰Chikorita</p>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body ">
                         <a data-toggle="collapse" data-target="#poke-Chikorita" aria-expanded="false">
                             <img src="img/Grass type/2_Chikorita.png" alt=" " class="img-thumbnail d-block m-auto border-0">
                         </a>
@@ -122,23 +196,24 @@
                         <p class="card-subtitle">日文︰メガニウム</p>
                         <p>英文︰Meganium</p>
                     </div>
-                    <div class="card-body ">
+                    <div class="card-body">
                         <a data-toggle="collapse" data-target="#poke-Meganium" aria-expanded="false">
                             <img src="img/Grass type/3_Meganium.png" alt=" " class="img-thumbnail d-block m-auto border-0">
                         </a>
                     </div>
-
                 </div>
-            </div>
+            </div> -->
+        </div>
+
     </section>
 
     <article id="area-showdetail">
         <section id="poke-Bayleaf" class="container collapse" data-parent="#area-showdetail">
-            <div class="card m-5 ">
+            <div class="card mt-1 mb-2">
                 <div class="card-header bg-light text-center">
                     <h3 class="card-title">月桂葉</h3>
                     <p class="card-subtitle">日文︰ベイリーフ</p>
-                    <p>英文︰Bayleaf</p>
+                    <p class="d-none d-md-block">英文︰Bayleaf</p>
                 </div>
                 <div class="card-body">
                     <div class="pthumbnail">
@@ -157,7 +232,7 @@
                 </div>
 
                 <div class="movie-detail text-muted">
-                    <h3 class="text-center bg-success text-white"><strong>基本介紹</strond></h3>
+                    <h3 class="text-center bg-success text-white item-cap p-2"><strong>基本介紹</strond></h3>
                 <h4 class="attr-Cap ">外貌</h4>
                 <p class="attr-descrip">月桂葉長得像是淡黃色的蜥腳下目恐龍或是蜥蜴。脖子上長著一圈像捲起來的葉子一樣的植物，據稱這些蕾的裡面是小樹的芽。一片鐮刀形狀的大葉子從月桂葉頭上突出來。月桂葉有著紅色的眼睛，分別有一個大腳指甲的四隻腳，和一條小小的尾巴。月桂葉比牠進化前的形態，月桂葉皮膚的顏色由綠色變成黃色。</p>
 
@@ -173,7 +248,7 @@
     </section>
 
     <section id="poke-Tangela" class="container collapse" data-parent="#area-showdetail">
-            <div class="card m-5">
+            <div class="card mt-1 mb-2">
                 <div class="card-header bg-light text-center">
                     <h3 class="card-title">蔓藤怪</h3>
                     <p class="card-subtitle">日文︰モンジャラ</p>
@@ -196,7 +271,7 @@
                 </div>
 
                 <div class="movie-detail text-muted">
-                    <h3 class="text-center bg-success text-white"><strong>基本介紹</strond></h3>
+                    <h3 class="item-cap text-center bg-success text-white  p-2"><strong>基本介紹</strond></h3>
                     <h4 class="attr-Cap">外貌</h4>
                     <p class="attr-descrip">蔓藤怪周身覆盖着厚厚的蓝色藤蔓，脸被藤蔓遮住，只能看到牠的眼睛。藤蔓使得牠的身体呈圆形，牠除去藤蔓的样子谁也不知道。牠的藤蔓上覆盖着细毛。蔓藤怪有一双红色的像穿了靴子的脚，但看不到牠的手臂。</p>
                     <h4 class="attr-Cap">特殊能力</h4>
@@ -212,7 +287,7 @@
     
         <section id="poke-Meganium" class="container collapse" data-parent="#area-showdetail">
 
-                <div class="card m-5">
+                <div class="card mt-1 mb-2">
                     <div class="card-header bg-light text-center">
                         <h3 class="card-title">大竺葵</h3>
                         <p class="card-subtitle">日文︰メガニウム</p>
@@ -235,7 +310,7 @@
                 </div>
 
                 <div class="movie-detail text-muted">
-                    <h3 class="text-center bg-success text-white"><strong>基本介紹</strond></h3>
+                    <h3 class="item-cap text-center bg-success text-white  p-2"><strong>基本介紹</strond></h3>
                         <h4 class="attr-Cap">外貌</h4>
                         <p class="attr-descrip">大竺葵是外貌類似蜥腳下目恐龍的寶可夢。不像進化前的兩個階段，菊草葉和月桂葉，頭上的葉子被取代成大竺葵鼻子上的兩根蕊狀突起，每根頂端都附有牠們的花藥。也和進化前不一樣的是，虹膜是黃色而非紅色，四隻腳分別有三根腳趾而非一根。圍繞脖子的葉子似乎已經長成一朵粉紅色的大花，中央有黃色的圖案，末梢是白色的。大竺葵的顏色也回到跟菊草葉相同，而月桂葉的身體主要顏色則變成米黃色。</p>
         
@@ -251,7 +326,7 @@
             </section>
 
             <section id="poke-Chikorita" class="container collapse" data-parent="#area-showdetail">
-                    <div class="card m-5">
+                    <div class="card mt-1 mb-2">
                         <div class="card-header bg-light text-center">
                             <h3 class="card-title">菊草叶</h3>
                             <p class="card-subtitle">日文︰チコリータ</p>
@@ -274,7 +349,7 @@
                 </div>
 
                 <div class="movie-detail text-muted">
-                    <h3 class="text-center bg-success text-white"><strong>基本介紹</strond></h3>
+                    <h3 class="text-center bg-success text-white  p-2"><strong>基本介紹</strond></h3>
                             <h4 class="attr-Cap">外貌</h4>
                             <p class="attr-descrip ">菊草葉是種主要色調是淡綠色的小型寶可夢，頭上有一片深綠色的葉子，脖子長著一圈芽。跟身體其他部位相比頭部相當大，紅色的大眼中看上去没有瞳孔，四隻短腳分別有一根帶指甲的腳趾，牠還有一條小小的尾巴。牠最大的特點是頭上的大葉子，葉片長度常常超過身體其他部份的長度。</p>
                             <h4 class="attr-Cap">特殊能力</h4>
